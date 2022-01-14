@@ -1,0 +1,24 @@
+<div class="container" *ngIf="user">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="updateUser()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName"
+                    [(ngModel)]="user.firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName"
+                    [(ngModel)]="user.lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Email</label>
+                    <input type="text" class="form-control" id="email" name="email"
+                    [(ngModel)]="user.email" required>
+                </div>
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

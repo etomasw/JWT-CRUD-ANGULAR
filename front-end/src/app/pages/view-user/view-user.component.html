@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row mt-5" *ngIf="user">
+      <div class="col-md-4 mx-auto">
+          <div class="card" style="width: 18rem;">
+              <div class="card-header text-center">
+                User Information
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>ID: </b>{{user.id}}</li>
+                <li class="list-group-item"><b>First Name: </b>{{user.firstName}}</li>
+                <li class="list-group-item"><b>Second Name: </b>{{user.lastName}}</li>
+                <li class="list-group-item"><b>Email: </b>{{user.email}}</li>
+                <li class="list-group-item"><b>Phone: </b>{{user.phone}}</li>
+                <li class="list-group-item"><b>ROLE: </b>{{user.role}}</li>
+                <li class="list-group-item"><b>Authorities: </b>{{user.authorities}}</li>
+              </ul>
+            </div>
+            
+      </div>
+  </div>
+  </div>
